@@ -1,0 +1,32 @@
+a {
+  color : #222;
+}
+
+#header{
+  height:100px;
+}
+#header .title{
+  font-size:24px;
+  font-weight:bold;
+}
+#header .subtitle{
+  font-size: 16px;
+  color : #333;
+}
+#header .subtitle a, #header .subtitle a.visited, #header .subtitle a.hover{
+  text-decoration:none;
+}
+#content a, #content a.visited, #content a.hover{
+  text-decoration:none;
+}
+
+#footer {
+  text-align: center;
+  margin-top:50px;
+  padding-top: 5px;
+  border-top:1px solid #ccc;
+}
+#footer a, #footer a.visited, #footer a.hover{
+  font-size:10px;
+  text-decoration:none;
+}
