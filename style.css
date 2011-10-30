@@ -3,7 +3,7 @@ a {
 }
 
 #header{
-  height:100px;
+  height:60px;
 }
 #header .title{
   font-size:24px;
@@ -29,4 +29,10 @@ a {
 #footer a, #footer a.visited, #footer a.hover{
   font-size:10px;
   text-decoration:none;
+}
+
+#canvas{
+  width:600px;
+  height:300px;
+  border: 1px solid black;
 }

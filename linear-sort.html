@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Visualization of Linear Sort Algorithm</title>
+  <link rel="stylesheet" type="text/css" href="/algos/style.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+  <script src="/algos/scripts/algorithm_visualizer.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="title">
+      Algorithm Visualizations in Javascript and HTML5 Canvas
+    </div>
+    <div class="subtitle">
+      <a href="https://github.com/graydot/Algorithm-Visualizations">Fork on Github</a>
+    </div>
+  </div>
+  <div id="content">
+    <h1>Linear Sort Algorithm</h1>
+    <p>To visualize the linear sort algorithm, click on the start button. The program creates a random list of 100 numbers and sorts them using the linear sort algorithm</p>
+    <div id="canvas">
+      
+    </div>
+    <script type="text/javascript">
+      $(function(){
+        var i;
+        var nums = [];
+        var numCount = 100;
+        for (i=0; i<numCount; i++){
+          nums[i]= parseInt(Math.random() * 100, 10);
+        }
+        var ui = new AlgorithmVisualizer({
+          container : '#canvas',
+          values : nums
+        });
+      });
+    </script>
+  </div>
+  <div id="footer">
+    developed by <a href="http://twitter.com/graydot">@graydot</a> and <a href="http://twitter.com/buggycerebral">@buggycerebral</a>
+
+  </div>
+</body>
+</html>
